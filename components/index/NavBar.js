@@ -55,10 +55,11 @@ const NavBar = () => {
               mr: 2,
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'Montserrat',
-              fontWeight: 700,
+              fontWeight:  700,
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
+              fontSize:'12px'
             }}
           >
             Arquitech

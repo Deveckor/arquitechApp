@@ -27,4 +27,19 @@
   padding: 25px;
   color: #484848;
 }
+
+@media (max-width: 767px) {
+  .container {
+    top: 30vw;
+  }
+  .container_vid {
+    border: solid;
+  }
+  .container_vid h1 {
+    margin-top: 36vw;
+  }
+  .container_text {
+    padding: 100px;
+  }
+}
 /*# sourceMappingURL=index.module.css.map */
