@@ -1,0 +1,30 @@
+.container_vid {
+  text-align: center;
+  font-family: 'Montserrat';
+}
+
+.container_vid h1 {
+  margin-top: 18vw;
+  font-size: 8vw;
+  color: white;
+}
+
+.container_vid h1 span {
+  color: #FFEAB2;
+}
+
+.container {
+  left: 0;
+  top: 10vw;
+  position: absolute;
+  width: 100%;
+  z-index: -2;
+}
+
+.container_text {
+  text-align: center;
+  font-family: 'Montserrat';
+  padding: 25px;
+  color: #484848;
+}
+/*# sourceMappingURL=index.module.css.map */

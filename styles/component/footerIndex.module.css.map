@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAA;EACN,gBAAgB,EAAE,OAAO;EAEzB,UAAU,EAAE,IAAI;CACnB;;AACD,AAAA,KAAK,CAAA;EACD,KAAK,EAAE,KAAK;EACZ,WAAW,EAAE,YAAY;EACzB,WAAW,EAAE,GAAG;EAChB,UAAU,EAAE,MAAM;EAClB,SAAS,EAAC,OAAO;EACjB,cAAc,EAAE,GAAG;CAEtB;;AACD,AAAA,QAAQ,CAAA;EACJ,KAAK,EAAE,OAAO;CACjB",
+    "sources": [
+        "footerIndex.module.scss"
+    ],
+    "names": [],
+    "file": "footerIndex.module.css"
+}

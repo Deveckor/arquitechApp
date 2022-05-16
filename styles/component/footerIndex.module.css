@@ -1,0 +1,18 @@
+.container {
+  background-color: #001F3E;
+  margin-top: 50px;
+}
+
+.mark {
+  color: #FFFF;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  text-align: center;
+  font-size: smaller;
+  padding-bottom: 5px;
+}
+
+.powered {
+  color: #75026d;
+}
+/*# sourceMappingURL=footerIndex.module.css.map */
