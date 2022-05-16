@@ -124,6 +124,7 @@ const NavBar = () => {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
+              fontSize: {xs: '16px'}
             }}
           >
             Arquitech
