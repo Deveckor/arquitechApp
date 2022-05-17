@@ -15,7 +15,7 @@ import Link from 'next/link';
 
 const pages = ['Crear Cuenta', 'Precio', 'Aprende mas..', 'Sing In'];
 const pagesTwo = ['Crear Cuenta', 'Precio', 'Aprende mas..'];
-const links = ['createAcount', 'Prices', 'helper', 'singIn']
+const links = ['createAccount', 'Prices', 'helper', 'singIn']
 
 
 const NavBar = () => {
@@ -124,7 +124,7 @@ const NavBar = () => {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
-              fontSize: {xs: '16px'}
+              fontSize: {xs: '14px'}
             }}
           >
             Arquitech

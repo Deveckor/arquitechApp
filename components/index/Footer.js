@@ -10,8 +10,8 @@ export default function Footer({handleOpen, open}) {
   top: -35px;
   margin-left: 800px;
 
-  @media (max-width: 1000px) {margin-left: 700px;}
-  @media (max-width: 768px) {margin-left: 350px;}
+  @media (max-width: 1000px) {margin-left: 650px;}
+  @media (max-width: 768px) {margin-left: 250px;}
   `
 
   console.log(open);
