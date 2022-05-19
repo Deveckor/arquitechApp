@@ -5,7 +5,8 @@ import CardInfo from "../components/index/CardInfo";
 import NavBar from "../components/index/NavBar";
 import styles from "../styles/index.module.scss";
 import {useState} from 'react';
-import ModalHelper from '../components/index/ModalHelp'
+import ModalHelper from '../components/index/ModalHelp';
+
 
 
 export default function Index() {
