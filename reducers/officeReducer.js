@@ -7,7 +7,7 @@ import {
 } from "../types";
 
 export const initialState = {
-    dt:[]
+    office:[]
 };
 
 export function officeReducer(state= initialState, action){
@@ -24,7 +24,7 @@ export function officeReducer(state= initialState, action){
                 
 
                     ...state,
-                    dt:[...state.dt, action.payload]
+                    office: action.payload
                 
             }
         }
