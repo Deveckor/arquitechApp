@@ -1,6 +1,11 @@
 import {TOKEN, NO_DATA_TOKEN} from '../types';
 
-let token = typeof window !== 'undefined' ? localStorage.getItem('token'): '';
+let token = ''
+if(typeof window !== 'undefined'){
+    if (localStorage.getItem('token')) {
+        token = localStorage.getItem('token');
+    }
+}
 
 
 

@@ -1,5 +1,5 @@
 export const helpHttp = () =>{
-    const customFetch = async (endpoint, options)=>{
+    const customFetch = async (endpoint, options, file = false)=>{
         const defaultHeader = {
             accept: 'application/json'
         };
@@ -9,12 +9,12 @@ export const helpHttp = () =>{
         options.headers = options.headers 
         ? {...defaultHeader, ...options.headers}
         : defaultHeader;
-       
-        options.body = JSON.stringify(options.body) || false;
-        
+
+        if(!file){
+            options.body = JSON.stringify(options.body) || false;
+        }
         if(!options.body) delete options.body;
       
-        
         
 
         try {
@@ -31,15 +31,19 @@ export const helpHttp = () =>{
 
     const get = (url, options = {}) => customFetch(url, options);
 
-    const post = (url, options = {}) => {
-        console.log(url, options);
+    const post = (url, options = {}, file) => {
         options.method = 'POST';
-        return customFetch(url, options)
+        return customFetch(url, options, file)
     };
+    const patch = (url, options = {}) =>{ 
+        options.method = 'PATCH';
+        return customFetch(url, options)
+    }
 
     
     return {
         get, 
-        post
+        post,
+        patch
     }
 }

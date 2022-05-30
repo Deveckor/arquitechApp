@@ -14,7 +14,7 @@ export default function Footer({handleOpen, open}) {
   @media (max-width: 768px) {margin-left: 250px;}
   `
 
-  console.log(open);
+  
   return (
     <div className={styles.container}>
         <div className={styles.mark}>

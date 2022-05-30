@@ -1,4 +1,4 @@
-import {loginAction, noAction} from '../actions/crudOfficeActions'
+
 import {tokenAction, noActionToken} from '../actions/tokenActions'
 import {helpHttp} from '../helpers/helpHttp'
 import {URL_BASE} from './config'
@@ -6,7 +6,7 @@ import {URL_BASE} from './config'
 
 let api = helpHttp()
 let endPoint = '';
-export default async function login(data, funt, dispatch, from = false, password) {
+export default async function login(data, dispatch, from = false, password, setTokenUser) {
     const {email} = data
     console.log(password);
     if(from){
@@ -30,11 +30,15 @@ export default async function login(data, funt, dispatch, from = false, password
         console.log(res);
         if (res.err) throw {res}
         localStorage.setItem('token', res.data.token)
+        setTokenUser(res.data.token)
         dispatch(tokenAction(res.data.token))
+        console.log(res);
+        return true
     } catch (error) {
         console.log(error);
         noActionToken()
+        return true
     }
-    funt();
+    
 
 }

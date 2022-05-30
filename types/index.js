@@ -9,3 +9,8 @@ export const NO_DATA_OFFICE = 'NO_DATA_OFFICE';
 
 export const TOKEN = 'TOKEN';
 export const NO_DATA_TOKEN = 'NO_DATA_TOKEN';
+
+
+//USER DATA
+export const USER_DATA = 'USER_DATA';
+export const NO_DATA_USER = 'NO_DATA_USER';
