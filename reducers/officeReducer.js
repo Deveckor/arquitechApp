@@ -7,13 +7,9 @@ import {
 } from "../types";
 
 export const initialState = {
-<<<<<<< HEAD
     office:{
 
     }
-=======
-    office:[]
->>>>>>> 776ccb8a2f1e89049ae95e03c8a46884cf9fb120
 };
 
 export function officeReducer(state= initialState, action){
@@ -30,11 +26,7 @@ export function officeReducer(state= initialState, action){
                 
 
                     ...state,
-<<<<<<< HEAD
                     office : action.payload
-=======
-                    office: action.payload
->>>>>>> 776ccb8a2f1e89049ae95e03c8a46884cf9fb120
                 
             }
         }
