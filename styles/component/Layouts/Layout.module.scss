@@ -1,0 +1,28 @@
+.container_layout{
+    display: flex;
+    height: fit-content;
+
+}
+.container_logo{
+    background-color: #001F3E;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+}
+.main{
+    
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .container_layout{
+        margin-top: 90px;
+    }
+    .aside{
+        display: none;
+        
+    }
+    
+}

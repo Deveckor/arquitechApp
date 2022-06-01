@@ -12,5 +12,6 @@ export const createAction = (data) => (
     );
 export const readAllAction = (data) => ({type: READ_ALL_DATA_OFFICE, payload: data});
 export const updateAction = (data) => ({type: UPDATE_DATA_OFFICE, payload: data});
-export const loginAction = (data) => ({type: UPDATE_DATA_OFFICE, payload: data});
+export const loginAction = (data) => ({type: POST_DATA_OFFICE, payload: data});
+
 export const noAction = () => ({type: NO_DATA_OFFICE});

@@ -1,0 +1,23 @@
+.containerUser{
+    padding:30px;
+    
+    font-family: 'Montserrat';
+    
+    h1{
+        font-weight: 800;
+        span{
+            color: #c89303;
+        }
+    }
+    
+}
+
+.container_avatar{
+    display: flex;
+    justify-content: center;
+}
+.avatar{
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50%;
+}
