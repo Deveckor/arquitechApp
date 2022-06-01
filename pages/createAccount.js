@@ -16,7 +16,7 @@ const InputLogin = () =>{
 
   const state = useSelector((state) => state);
   const dispatch = useDispatch();
-  const {dt} = state.office;
+  const {office} = state.office;
 
   const [error, setError] = useState(null)
   const [data, setData] = useState()
@@ -41,7 +41,7 @@ const InputLogin = () =>{
       console.log(res);
       if(!res.err) 
       handleOpen()
-      dispatch(createAction(res.office));
+      dispatch(createAction(res));
       
     } catch (error) {
       handleOpen()
@@ -60,10 +60,10 @@ const InputLogin = () =>{
     
    
   }
-  if(state.office.dt.length > 0){
-    console.log(state.office.dt[0].name);
+  if(state.office.office){
+    console.log(state.office.office.name);
   }
-  console.log(state.office.dt);
+ 
   
   return (
     <>
@@ -151,7 +151,8 @@ const InputLogin = () =>{
       handleClose={handleClose}
       open={open}
       handleOpen={handleOpen}
-      data={data}
+      state={state}
+      error={error}
       />
     </Box>
       </>

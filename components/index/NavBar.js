@@ -49,8 +49,7 @@ const NavBar = () => {
           <Typography
             variant="h6"
             noWrap
-            component="a"
-            href="/"
+            
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -59,7 +58,7 @@ const NavBar = () => {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
-              fontSize:'12px'
+              fontSize:'22px'
             }}
           >
             Arquitech
@@ -124,7 +123,7 @@ const NavBar = () => {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
-              fontSize: {xs: '14px'}
+              fontSize: {xs: '12px'}
             }}
           >
             Arquitech

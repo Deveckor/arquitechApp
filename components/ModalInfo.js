@@ -1,7 +1,7 @@
 import React from 'react'
 import {Modal, Box, Typography, Button} from '@mui/material'
 
-export default function ModalInfo({open, handleClose, data}) {
+export default function ModalInfo({open, handleClose, state, error}) {
 
   
     let success = '',
@@ -18,16 +18,17 @@ export default function ModalInfo({open, handleClose, data}) {
         boxShadow: 24,
         p: 4,
       };
-      if(data){
-           success = data.success;            
-          if(!data.success){
-               title = data.message;
-               paragraph = data.error; 
-          } else {
-             title = data.message;
-             paragraph = `Felicidades ${data.office.name}, tu registro fue exitoso, Bienvenido a Arquitech.`;
+      console.log('state',state);
+      if(state){
+        let name = state.office.office.name
+        title = state.message;
+        paragraph = `Felicidades ${name}, tu registro fue exitoso, Bienvenido a Arquitech.`;
              
-          }
+      }
+      if(error){
+        
+           title = error.message;
+           paragraph = error.error; 
       }
       
       const login = async () =>{
@@ -48,7 +49,7 @@ export default function ModalInfo({open, handleClose, data}) {
         <Typography id="modal-modal-description" sx={{ mt: 2 }}>
           {paragraph}
         </Typography>
-        {!data ? null : !success?<Button onClick={handleClose}>Cerrar</Button>
+        {!state ? null : !success?<Button onClick={handleClose}>Cerrar</Button>
         : <Button onClick={login}>Aceptar</Button>
         }
         

@@ -21,7 +21,6 @@ export const helpHttp = () =>{
         try {
             let res = await fetch(endpoint, options);
             let json = await res.json();
-            console.log(json);
             if(!res.ok) throw {err: true, status: res.status || "00", statusText: res.message || 'Ocurrió un Error'}
             return json;
         } catch (error) {

@@ -7,7 +7,9 @@ import {
 } from "../types";
 
 export const initialState = {
-    dt:[]
+    office:{
+
+    }
 };
 
 export function officeReducer(state= initialState, action){
@@ -15,7 +17,7 @@ export function officeReducer(state= initialState, action){
         case READ_ALL_DATA_OFFICE:{
             return{ 
                 ...state,
-                dt: action.payload.map((data) => data)
+                office: action.payload.map((data) => data)
             }
         }
         case CREATE_DATA_OFFICE:{
@@ -24,23 +26,23 @@ export function officeReducer(state= initialState, action){
                 
 
                     ...state,
-                    dt:[...state.dt, action.payload]
+                    office : action.payload
                 
             }
         }
         case UPDATE_DATA_OFFICE:{
-            let newData = state.dt.map((el)=> 
+            let newData = state.office.map((el)=> 
              el.id === action.payload.id ? action.payload : el
             )
             return{ 
                 ...state,
-                dt: newData
+                office: newData
             };
         };
         case POST_DATA_OFFICE:{
             return{ 
                 ...state,
-                dt:[...state.dt, action.payload]
+                office: action.payload
             }
         }
         case NO_DATA_OFFICE:
